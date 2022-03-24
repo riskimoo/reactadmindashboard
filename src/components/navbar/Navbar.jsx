@@ -1,38 +1,41 @@
 
 import { ChatBubbleOutlined, DarkModeOutlined, FullscreenExitOutlined, LanguageOutlined, ListAltOutlined, NotificationsNoneOutlined, SearchOutlined } from "@mui/icons-material"
+import { useContext } from "react"
+import { DarkModeContext } from "../../context/darkModeContext"
 import "./navbar.scss"
 
 const Navbar = () => {
+    const { dispatch } = useContext(DarkModeContext)
     return (
         <div className="navbar">
             <div className="wrapper">
                 <div className="search">
                     <input type="text" placeholder="search" />
-                    <SearchOutlined />
+                    <SearchOutlined className="icon" />
                 </div>
                 <div className="items">
                     <div className="item">
-                        <LanguageOutlined />
+                        <LanguageOutlined className="icon" />
                         English
                     </div>
                     <div className="item">
-                        <DarkModeOutlined />
+                        <DarkModeOutlined className="icon" onClick={() => dispatch({ type: "TOGGLE" })} />
 
                     </div>
                     <div className="item">
-                        <FullscreenExitOutlined />
+                        <FullscreenExitOutlined className="icon" />
 
                     </div>
                     <div className="item">
-                        <NotificationsNoneOutlined />
+                        <NotificationsNoneOutlined className="icon" />
                         <div className="counter">2</div>
                     </div>
                     <div className="item">
-                        <ChatBubbleOutlined />
+                        <ChatBubbleOutlined className="icon" />
                         <div className="counter">2</div>
                     </div>
                     <div className="item">
-                        <ListAltOutlined />
+                        <ListAltOutlined className="icon" />
 
                     </div>
                     <div className="item">
