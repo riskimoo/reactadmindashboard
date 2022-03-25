@@ -46,45 +46,63 @@ const Sidebar = () => {
                             <span>Products</span>
                         </li>
                     </Link>
-                    <li>
-                        <CreditCardIcon className="icon" />
-                        <span>Orders</span>
-                    </li>
-                    <li>
-                        <LocalShippingIcon className="icon" />
-                        <span>Delivery</span>
-                    </li>
+                    <Link to="/maintenance" style={{ textDecoration: "none" }}>
+                        <li>
+                            <CreditCardIcon className="icon" />
+                            <span>Orders</span>
+                        </li>
+                    </Link>
+                    <Link to="/maintenance" style={{ textDecoration: "none" }}>
+                        <li>
+                            <LocalShippingIcon className="icon" />
+                            <span>Delivery</span>
+                        </li>
+                    </Link>
                     <p className="title">USEFUL</p>
-                    <li>
-                        <InsertChartIcon className="icon" />
-                        <span>Stats</span>
-                    </li>
-                    <li>
-                        <NotificationsNoneIcon className="icon" />
-                        <span>Notifications</span>
-                    </li>
+                    <Link to="/maintenance" style={{ textDecoration: "none" }}>
+                        <li>
+                            <InsertChartIcon className="icon" />
+                            <span>Stats</span>
+                        </li>
+                    </Link>
+                    <Link to="/maintenance" style={{ textDecoration: "none" }}>
+                        <li>
+                            <NotificationsNoneIcon className="icon" />
+                            <span>Notifications</span>
+                        </li>
+                    </Link>
                     <p className="title">SERVICE</p>
-                    <li>
-                        <SettingsSystemDaydreamOutlinedIcon className="icon" />
-                        <span>System Health</span>
-                    </li>
-                    <li>
-                        <PsychologyOutlinedIcon className="icon" />
-                        <span>Logs</span>
-                    </li>
-                    <li>
-                        <SettingsApplicationsIcon className="icon" />
-                        <span>Settings</span>
-                    </li>
+                    <Link to="/maintenance" style={{ textDecoration: "none" }}>
+                        <li>
+                            <SettingsSystemDaydreamOutlinedIcon className="icon" />
+                            <span>System Health</span>
+                        </li>
+                    </Link>
+                    <Link to="/maintenance" style={{ textDecoration: "none" }}>
+                        <li>
+                            <PsychologyOutlinedIcon className="icon" />
+                            <span>Logs</span>
+                        </li>
+                    </Link>
+                    <Link to="/maintenance" style={{ textDecoration: "none" }}>
+                        <li>
+                            <SettingsApplicationsIcon className="icon" />
+                            <span>Settings</span>
+                        </li>
+                    </Link>
                     <p className="title">USER</p>
-                    <li>
-                        <AccountCircleOutlinedIcon className="icon" />
-                        <span>Profile</span>
-                    </li>
-                    <li>
-                        <ExitToAppIcon className="icon" />
-                        <span>Logout</span>
-                    </li>
+                    <Link to="/maintenance" style={{ textDecoration: "none" }}>
+                        <li>
+                            <AccountCircleOutlinedIcon className="icon" />
+                            <span>Profile</span>
+                        </li>
+                    </Link>
+                    <Link to="/maintenance" style={{ textDecoration: "none" }}>
+                        <li>
+                            <ExitToAppIcon className="icon" />
+                            <span>Logout</span>
+                        </li>
+                    </Link>
                 </ul>
             </div>
             <div className="bottom">
