@@ -1,9 +1,9 @@
 import "./unavailable.scss"
 
-const Unavailable = ({ list }) => {
+const Unavailable = () => {
     return (
         <div className="unavailable">
-            Coming soon {list} featured
+            Coming soon featured
         </div>
     )
 }
