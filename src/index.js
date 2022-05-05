@@ -5,10 +5,11 @@ import { DarkModeContextProvider } from './context/darkModeContext';
 
 
 ReactDOM.render(
-    <DarkModeContextProvider>
-        <App />
-    </DarkModeContextProvider>
-,document.getElementById('root'
-));
+    <React.StrictMode>
+        <DarkModeContextProvider>
+            <App />
+        </DarkModeContextProvider>
+    </React.StrictMode>
+,document.getElementById('root'));
 
 
